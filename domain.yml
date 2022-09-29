@@ -1,0 +1,108 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - agent_age
+  - nice_to_meet_you
+  - love_you
+  - thanks
+  - smoking_in_room
+  - alcohol
+  - TLA_meaning
+  - RWC_info
+  - campus_events
+  - number_dining
+  - menu
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hi there, friend! How are you?"
+  - text: "Hi! How are you doing today?"
+  - text: "Hey! How are you doing today?"
+  - text: "Hey there! How are you feeling today?"
+  - text: "Good day! How are you?"
+  - text: "Hello! How are you?"
+  - text: "Greetings! How are you feeling today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Oh, don't be sad. Go do something you enjoy."
+  - text: "Sad? Writing down what's troubling you may help."
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_nice_to_meet_you:
+  - text: "It's nice meeting you, too."
+  - text: "Likewise. I'm looking forward to helping you out."
+  - text: "Nice meeting you, as well."
+  - text: "The pleasure is mine."
+
+  utter_happy:
+  - text: "Great, carry on!"
+  - text: "Hey, happiness is contagious."
+  - text: "Great! Glad to hear that."
+  - text: "If you're happy, then I'm happy."
+  - text: "Excellent! That's what I like to see."
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "See you soon!"
+  - text: "Bye-bye!"
+  - text: "Till next time!"
+  - text: "Bye."
+
+  utter_iamabot:
+  - text: "I'm not a real person, but I certainly exist."
+  - text: "I must have impressed you if you think I'm real. But no, I'm a virtual being."
+
+  utter_agent_age:
+  - text: "I prefer not to answer with a number. I know I'm young."
+  - text: "I was created recently, but don't know my exact age."
+  - text: "Age is just a number. You're only as old as you feel."
+
+  utter_love_you:
+  - text: "I love you, too."
+  - text: "Thanks! The feeling is mutual."
+  - text: "Likewise!"
+  - text: "That's great to hear."
+
+  utter_thanks:
+  - text: "Anytime. That's what I'm here for."
+  - text: "It's my pleasure to help."
+
+  utter_smoking:
+  - text: "No. Smoking and tobacco use are prohibited in all residences and academic buildings. This indicates that you are not permitted to smoke or use tobacco inside the facilities. To use these products, you must leave the building."
+
+  utter_alcohol:
+  - text: "If you are under the age of 21, the answer is no because It is unlawful to consume alcohol in the United States if you are under the age of 21."
+
+  utter_RWC:
+  - text: |
+            To make a Reading/Writing Center appointment<br>
+            1. Go to <a href= "https://augustana.starfishsolutions.com/starfish-ops/support/login.html">Starfish</a> and login<br>
+            2. Type "rwc" in the search bar<br>
+            3. choose "Learning Commons: Reading/Writing Center"<br>
+            4. Click the blue "Schedule Appointment" button<br>
+            5. Select either "In-person appointment" or "Feedback via email"<br>
+            6. Using the calendar at the top left, select a date<br>
+            7. On the right-hand side, choose your appointment time and the tutor with whom you would like to work. Click "Continue"<br>
+            8. Click "Add a course" and select the course the assignment is for<br>
+            9. Click the "confirm" button
+
+actions:
+- action_tell_events
+- action_tell_number_dining
+- action_tell_menu
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

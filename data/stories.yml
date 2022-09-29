@@ -1,0 +1,97 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: nice_to_meet_you
+  - action: utter_nice_to_meet_you
+
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: whats your age
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: agent_age
+  - action: utter_agent_age
+
+- story: are you a robot
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: love
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: love_you
+  - action: utter_love_you
+
+- story: love 2
+  steps: 
+  - intent: love_you
+  - action: utter_love_you
+
+- story: are you a robot 2
+  steps: 
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: whats your age 2
+  steps:
+  - intent: agent_age
+  - action: utter_agent_age
+
+- story: rwc appointment
+  steps:
+  - intent: RWC_info
+  - action: utter_RWC
+
+- story: alcohol in dorms
+  steps:
+    - intent: alcohol
+    - action: utter_alcohol
+
+- story: smoking in dorms
+  steps:
+    - intent: smoking_in_room
+    - action: utter_smoking

@@ -1,0 +1,304 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - long time no see
+    - hello
+    - hi
+    - howdy
+    - hey there
+    - hey
+    - greetings
+    - I greet you
+    - hi there
+    - hello there
+    - lovely day isn't it
+    - hello again
+    - just going to say hi
+    - a good day
+    - afternoon
+    - hello hi
+    - heya
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - good
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - you are real
+    - you are not fake
+    - are you real
+    - you are so real
+    - I think you are real
+    - I don't think you're fake
+    - I suppose you're real
+    - glad you're real
+    - are you a real person
+    - are you a real human
+    - you are a real person
+    - you are not real
+
+- intent: agent_age
+  examples: |
+    - how old are you?
+    - how old is your platform
+    - are you 21 years old
+    - i'd like to know your age
+    - age of yours
+    - your age
+    - what's your age
+    - tell me your age
+    - how old are you
+
+- intent: nice_to_meet_you
+  examples: |
+    - nice to meet you
+    - it was nice meeting you
+    - it was very nice to meet you
+    - good to know each other
+    - glad to meet you
+    - nice meeting you
+    - nice to meet you too
+    - pleased to meet you
+    - pleasure to meet you
+    - pleasure to meet you too
+
+- intent: love_you
+  examples: |
+    - I love you
+    - love you
+    - I adore you
+    - I am in love with you
+    - I love you so much
+    - I love you too
+    - I think I love you
+    - loving you
+    - you know I love you  
+
+- intent: thanks
+  examples: |
+    - you helped a lot thank you
+    - appreciate your help
+    - cheers
+    - thank you
+    - thanks
+    - thanks a lot
+    - terrific thank you
+    - great thank you
+    - thanks so much
+    - thank you so much
+    - thanks for your help
+    - thank you for your help
+    - nice thank you
+    - I appreciate it
+    - I thank you
+    - thank you that will be all
+    - thanks buddy
+    - thanks love
+    - thank you my friend
+    - well thanks
+    - very good thank you
+    - good thanks
+    - thanks again
+    - thank you again
+    - all thank you
+    - alright thank you
+    - alright thanks
+    - no thank you that's all
+    - perfect thank you
+    - so nice of you
+    - well thank you
+    - thnx
+    - thanx
+
+- intent: smoking_in_room
+  examples: |
+    - May I smoke in my room
+    - Can I  smoke in my room
+    - Is smoking allowed in residence halls
+    - Can you smoke in your room
+    - Can you have weed in your room
+    - Is smoking illegal in my room
+    - Is it ok to smoke in residence hall
+    - is it ok to smoke in my room
+    - weed in my room
+    - smoking in my room
+    - smoking in dorms
+    - can i smoke in my dorm
+    - is smoking allowed in dorms
+    - smoking
+    - smoke in room
+    - smoke in dorm
+    - smoke in residence
+    - smoking in building
+
+- intent: alcohol
+  examples: |
+    - May I have alcohol wine, beer, hard liquor in my room
+    - may i have alcohol in my room
+    - can i drink in my room
+    - can i keep drinks inside my room
+    - can i carry drinks to my room
+    - can i have drinks in my room
+    - can i have wine in my room
+    - can i drink
+    - can i own alcohol
+    - can i have beer 
+    - can i have liquor 
+    - can i keep wine inside my room
+    - can i keep beer inside my room
+    - alcohol in my dorm
+    - alcohol in dorms
+    - beer in dorms
+    - i have beer in my dorm
+    - can i keep alcohol beer wine liquor in my dorm
+  
+- intent: TLA_meaning
+  examples: |
+    - what does tla stand for
+    - what does tla mean
+    - tla meaning
+    - what is a tla
+    - whats tla
+    - what is the meaning of tla
+    - tla abbreviation
+    - explain tla
+    - information about tla
+    - i need information about tla
+    - how do i sign up for tla
+  
+- intent: RWC_info
+  examples: |
+    - how do i make an appointment at reading center
+    - how do i make an appointment at writing center
+    - how do i make an appointment at reading writing center
+    - how do i make reading center appointment
+    - how do i make wwriting center appointment 
+    - how can i schedule appointment for reading writing 
+    - essay review
+    - how do i schedule appointment for reading center
+    - schedule appointment reading writing center
+    - schedule appointment writing center
+    - schedule appointment rwc
+    - rwc
+    - reading writing
+    - reading writing center
+    - how to make appointment reading writing center
+    - appointment essay reading writing center rwc
+
+- intent: campus_events
+  examples: |
+    - what events are on campus?
+    - are there any events in campus?
+    - events?
+    - events
+
+- intent: number_dining
+  examples: |
+    - how many people are inside the dining hall?
+    - how many people inside CSL?
+    - number in dining hall
+    - how many students are inside the dining hall?
+    - how many students are inside gerber dining center?
+    - number of people inside gerber dining center
+    - how many people are eating in the dining hall?
+
+- intent: menu
+  examples: |
+    - whats the menu for today?
+    - whats the menu in the csl?
+    - csl menu
+    - dining hall menu
+    - menu today
+    - the menu
+    - what food is there in the csl
+    - food in csl
+    - food in dining hall
+    - what is there for lunch?
+    - what kind of food is there in the csl?
+    - what is the menu today?
+    - what is the menu?
+

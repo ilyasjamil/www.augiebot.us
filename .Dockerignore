@@ -1,0 +1,4 @@
+tests/*
+models/*
+actions/*
+**/*.md

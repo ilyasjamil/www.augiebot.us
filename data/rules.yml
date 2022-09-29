@@ -1,0 +1,33 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: say "you're welcome" anytime the user thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: give list of events when user asks
+  steps:
+  - intent: campus_events
+  - action: action_tell_events
+
+- rule: give number of students in csl when asked
+  steps:
+  - intent: number_dining
+  - action: action_tell_number_dining
+
+- rule: give today's menu when asked
+  steps:
+  - intent: menu
+  - action: action_tell_menu
