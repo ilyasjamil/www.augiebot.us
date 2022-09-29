@@ -26,16 +26,6 @@ class ActionTellEvents(Action):
         driver.get(url)
         driver.set_page_load_timeout(20)
         driver.maximize_window()
-        """ options = webdriver.ChromeOptions()
-        options.add_argument('--ignore-certificate-errors-spki-list')
-        options.add_argument('--ignore-ssl-errors')
-        options.add_argument('log-level=3')
-        options.add_argument("--headless")
-        driver = webdriver.Chrome(executable_path='CHROMEDRIVER_DIR/chromedriver', options=options)
-        #driver = webdriver.Remote(command_executor='http://hub:4444/wd/hub',options=options)
-        driver.get(url)
-        driver.set_page_load_timeout(20)
-        driver.maximize_window() """
 
         events = driver.find_elements(By.CLASS_NAME, 'post__title')
         dates = driver.find_elements(By.CLASS_NAME, 'post__metadata')
